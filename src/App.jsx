@@ -41,7 +41,7 @@ const GuestIdBadge = ({ id, className = "" }) => (
 export default function App() {
   // --- 1. CONFIGURATION STATE ---
   const [appName] = useState(() => localStorage.getItem('cbt_appName') || "DANIEL'S ANATOMY CBT APP");
-  const [testTitle] = useState(() => localStorage.getItem('cbt_testTitle') || "ANAT 213: GENERAL EMBRYO AND GENETICS");
+  const [testTitle] = useState(() => localStorage.getItem('cbt_testTitle') || "ANAT 201:GROSS ANATOMY I(UPPER LIMB)");
   const [testDuration] = useState(() => {
     const saved = localStorage.getItem('cbt_duration');
     return saved ? parseInt(saved, 10) : 20;
